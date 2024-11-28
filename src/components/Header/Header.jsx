@@ -1,9 +1,11 @@
 import React from 'react';
+import logo from '../../assets/images/freedom.svg';
 
 function Header() {
   return (
     <header className="header">
-      asassa
+      <img src={logo} className="header__logo" alt="freedom" />
+      dashboard
     </header>
   );
 }

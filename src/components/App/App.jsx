@@ -13,28 +13,30 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
-      <YMaps>
-        <Map defaultState={{ center: [51.676729, 39.244346], zoom: 12 }}>
-          <Clusterer
-            options={{
-              preset: 'islands#darkGreenClusterIcons',
-              groupByCoordinates: false,
-            }}
-          >
-            <Placemark
-              key="1"
-              geometry={[51.676729, 39.244346]}
-              options={
-                    {
-                      preset: 'islands#circleDotIcon',
-                      iconColor: '#3CB371',
-                    }
+      <div className="app__container">
+        <Header />
+        <YMaps>
+          <Map defaultState={{ center: [51.676729, 39.244346], zoom: 12 }}>
+            <Clusterer
+              options={{
+                preset: 'islands#darkGreenClusterIcons',
+                groupByCoordinates: false,
+              }}
+            >
+              <Placemark
+                key="1"
+                geometry={[51.676729, 39.244346]}
+                options={
+                  {
+                    preset: 'islands#circleDotIcon',
+                    iconColor: '#3CB371',
                   }
-            />
-          </Clusterer>
-        </Map>
-      </YMaps>
+                }
+              />
+            </Clusterer>
+          </Map>
+        </YMaps>
+      </div>
     </div>
   );
 }
