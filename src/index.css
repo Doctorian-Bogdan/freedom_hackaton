@@ -2,5 +2,8 @@
 @import url("vendor/fonts.css");
 @import url("components/App/App.scss");
 @import url("components/Header/Header.scss");
+@import url("components/Map/ClientsMap.scss");
+@import url("components/Stats/Stats.scss");
+@import url("components/Charts/Charts.scss");
 
 /*# sourceMappingURL=index.css.map */
