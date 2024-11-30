@@ -1,39 +1,19 @@
-.clients {
+.dashboard {
   width: 100%;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 0 8px 1px rgba(0, 124, 170, 0.5);
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 50px;
 
-  &__content {
-    width: 65%;
-    background-color: #fff;
-    box-shadow: 0 0 8px 1px rgba(0, 124, 170, 0.5);
-    box-sizing: border-box;
-    padding: 15px;
-    border-radius: 15px;
-    overflow: hidden;
+  &__filtes {
+    align-self: center;
   }
 
-  &__table {
-    width: 100%;
-  }
-
-  &__table-header {
-    padding-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  &__table-title {
-    font-size: 24px;
-    font-weight: 500;
-  }
-
-  &__table-buttons {
-    display: flex;
-  }
-
-  &__table-button {
+  &__button {
     border-radius: 0;
     border-bottom: 2px solid #0b82ae;
     border-top: 2px solid #0b82ae;
@@ -46,26 +26,26 @@
     transition: 0.2s;
   }
 
-  &__table-button:hover {
+  &__button:hover {
     background-color: rgba(11, 130, 174, 0.3);
   }
 
-  &__table-button:first-child {
+  &__button:first-child {
     border-radius: 5px 0 0 5px;
     border-left: 2px solid #0b82ae;
   }
 
-  &__table-button:last-child {
+  &__button:last-child {
     border-radius: 0 5px 5px 0;
     border-right: 2px solid #0b82ae;
   }
 
-  &__table-button_active {
+  &__button_active {
     background-color: #0b82ae;
     color: #fff;
   }
 
-  &__table-row {
+  &__item {
     display: flex;
     align-items: center;
     width: 100%;
@@ -75,32 +55,42 @@
     border-radius: 15px;
   }
 
-  &__table-row:hover {
+  &__item:hover {
     background-color: #84d2ed;
   }
 
-  &__table-id {
-    text-align: center;
-    width: 25%;
-  }
-
-  &__table-gender {
-    text-align: center;
-    width: 10%;
-  }
-
-  &__table-age {
-    text-align: center;
+  &__item-id {
     width: 15%;
-  }
-
-  &__table-address {
     text-align: center;
-    width: 50%;
   }
 
-  &__table-notfound {
-    width: 100%;
+  &__item-address {
+    width: 20%;
+    text-align: center;
+  }
+
+  &__item-gender {
+    width: 10%;
+    text-align: center;
+  }
+
+  &__item-age {
+    width: 10%;
+    text-align: center;
+  }
+
+  &__item-duration {
+    width: 15%;
+    text-align: center;
+  }
+
+  &__item-channel {
+    width: 15%;
+    text-align: center;
+  }
+
+  &__item-category {
+    width: 15%;
     text-align: center;
   }
 }
