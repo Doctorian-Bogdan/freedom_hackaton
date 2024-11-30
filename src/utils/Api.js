@@ -93,6 +93,24 @@ class Api {
     })
       .then((res) => this._checkResponse(res));
   }
+
+  getChannelStats(channel) {
+    return axios.get(`${this._baseUrl}/stats/channels/avgTime/${channel}`, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res) => this._checkResponse(res));
+  }
+
+  sendEmailReport(message) {
+    return axios.post(`${this._baseUrl}/stats/channels/avgTime/${message}`, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res) => this._checkResponse(res));
+  }
 }
 
 const api = new Api({
