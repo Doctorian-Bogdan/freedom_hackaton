@@ -220,10 +220,6 @@ function Channels() {
         }
       </div>
 
-      <button onClick={() => console.log(channelData)}>
-        sqsa
-      </button>
-
       <div className="channels__radar">
         <h2 className="channels__subtitle">
           Среднее время просмотра каждого пакета каналов

@@ -104,7 +104,9 @@ class Api {
   }
 
   sendEmailReport(message) {
-    return axios.post(`${this._baseUrl}/stats/channels/avgTime/${message}`, {
+    return axios.post(`${this._baseUrl}/emails`, {
+      message,
+    }, {
       headers: {
         'Content-Type': 'application/json',
       },

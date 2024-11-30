@@ -12,6 +12,7 @@ import Charts from '../Charts/Charts.jsx';
 import api from '../../utils/Api.js';
 import analiz1 from '../../assets/images/analiz_1.jpg';
 import analiz2 from '../../assets/images/analiz_2.jpg';
+import analiz3 from '../../assets/images/analiz_3.jpg';
 
 function Stats() {
   ChartJS.register(
@@ -93,6 +94,7 @@ function Stats() {
       </h1>
       <img src={analiz1} alt="кластерный анализ" className="stast__chart" />
       <img src={analiz2} alt="кластерный анализ" className="stast__chart" />
+      <img src={analiz3} alt="кластерный анализ" className="stast__chart" />
     </div>
   );
 }
